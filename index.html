@@ -1,0 +1,60 @@
+<!DOCTYPE >
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <style>
+        #divContainer {
+            text-align: center;
+        }
+
+        .redText {
+            color: black;
+            background-color: white;
+
+        }
+
+        input {
+            text-align: right;
+        }
+
+        .redText:hover {
+            color: black;
+            cursor: pointer;
+        }
+        #btnLogin {
+            cursor: pointer;
+            font-size: large;
+            color: #261;
+        }
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: x-large;
+            color: #261;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+          <h1>Login</h1>
+        <input type="text" placeholder="Username" id="txtUsername" style="color: greenyellow;" class="redText">
+        <input type="text" placeholder="Password" id="txtPassword" style="color: greenyellow;" class="redText">
+        <div style="margin-top: 1rem;" class="btnLogin">
+            <button id="btnLogin" onclick="alert('Login Successfully.')">Login</button>
+    </div>
+        </div>        
+</body>
+    <script>
+    console.log("Hello World");
+    let buttonLogin = document.querySelector('#btnLogin');
+    buttonLogin.onclick = function () {
+        alert("Login Successfully.")
+    };
+    </script>
+
+
+
+
+
+</html>
